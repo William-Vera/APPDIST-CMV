@@ -1,0 +1,129 @@
+.graficos {
+    max-width: 48%; /* Establece un ancho máximo para los gráficos */
+    /* height: 20%;  */
+    box-sizing: border-box; /* Incluye el borde y el relleno en el cálculo del tamaño total */
+    /* border: 1px solid grey; */
+    margin-bottom: 10px; /* Añade un margen inferior para separar las filas */
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 1);
+}
+
+.contenedor_gra {
+    width: 90%; /* Establece un ancho para el contenedor */
+    margin: auto; /* Centra el contenedor horizontalmente */
+    /* border: 1px solid grey; */
+    padding: 10px; /* Añade un relleno al contenedor */
+    box-sizing: border-box; /* Incluye el borde y el relleno en el cálculo del tamaño total */
+}
+
+.fila_gra {
+    display: flex;
+    justify-content: space-between; 
+}
+
+.fila_gra .graficos {
+    width: 45%;
+    /* height: auto; */
+    background-color: white;
+    max-height: 200px;
+    margin-bottom: 30px;
+}
+
+.fila_gra .graficos:last-child {
+    margin-right: 0; 
+}
+
+.cont_todo {
+    background-color: rgb(247, 247, 247);
+    padding: 20px;
+    border-radius: 20px;
+    width: 80%;
+    margin: auto;
+    position: relative;
+}
+
+.select-container {
+  position: absolute;
+  top: 10px; /* Ajusta la posición vertical del contenedor según tu preferencia */
+  right: 10px; /* Ajusta la posición horizontal del contenedor según tu preferencia */
+}
+
+.form-select {
+  width: 190px; /* Ancho del select */
+  /* Añade estilos adicionales según sea necesario */
+}
+
+/* En tu archivo CSS */
+
+.interruptor-container {
+    position: absolute;
+    top: 10px; /* Ajusta la posición vertical según tu preferencia */
+    right: 10px; /* Ajusta la posición horizontal según tu preferencia */
+    display: flex;
+    align-items: center;
+    color: #333;
+    z-index: 1000; /* Asegura que esté por encima del contenido */
+  }
+  
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 34px;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 50%;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+  

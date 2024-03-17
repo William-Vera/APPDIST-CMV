@@ -1,0 +1,17 @@
+{% extends 'principal.html' %}
+{% load static %}
+{% block content %}
+<div class="cont_todo">
+    <div class="select-container">
+        <select class="form-select" id="selectDato">
+            <option value="last_value1">Dispositivo Sala</option>
+            <option value="last_value4">Dispositivo Cocina</option>
+            <option value="last_value2">Humedad</option>
+            <option value="last_value3">Temperatura</option>
+        </select>
+    </div>  
+    <h1 style="text-align: center; margin-bottom: 20px; margin-top: 20px;">Historico Dispositivos</h1>
+    <div id="datos" data-datos="{{ datos_json }}"></div>
+    <canvas id="myChart"></canvas>
+</div>
+{% endblock %}
