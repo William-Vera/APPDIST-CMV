@@ -50,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
                 String email = editTextEmail.getText().toString();
                 String password = editTextPassword.getText().toString();
 
-                if (email.equals("williamvera210@gmail.com") && password.equals("admin")) {
+                if (email.equals("aaaaa@gmail.com") && password.equals("admin")) {
                     AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
                     builder.setMessage("Inicio de sesión correcto")
                             .setPositiveButton("Ok", new DialogInterface.OnClickListener() {
